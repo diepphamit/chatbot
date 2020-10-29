@@ -1,0 +1,6 @@
+django
+wikipedia
+nltk
+djangorestframework
+torch
+torchvision
