@@ -4,3 +4,6 @@ nltk
 djangorestframework
 torch
 torchvision
+django-cors-headers 
+bs4
+lxml

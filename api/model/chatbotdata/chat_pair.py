@@ -1,11 +1,14 @@
 import datetime
 from . import stories 
+import requests, json 
+
+
 
 chat_pairs = [
     
     [
         r"hi|hey|hello",
-        ["Hello", "Hey there",]
+        ["Hello"]
     ],
     
     [
@@ -59,10 +62,6 @@ chat_pairs = [
         ['Islamabad, Pakistan',]
     ],
     [
-        r"how is weather in (.*)?",
-        ["Weather in %1 is awesome like always","Too hot man here in %1","Too cold man here in %1","Never even heard about %1"]
-    ],
-    [
         r"i work in (.*)?",
         ["%1 is an Amazing company, I have heard about it.",]
     ],
@@ -76,7 +75,7 @@ chat_pairs = [
     ],
     [
         r"(.*) (cooking|cook|kitchen)",
-        ["IYes! I love cooking. My favorite food is noodles.",]
+        ["Yes! I love cooking. My favorite food is noodles.",]
     ],
     [
         r"(.*) fact",
@@ -116,14 +115,6 @@ chat_pairs = [
         ["Bye take care. See you soon :) ","It was nice talking to you. See you soon :)"]
     ],
     [
-        r"(.*) what time (.*) ?",
-        ['This time is: ' + str(datetime.datetime.now()),]
-    ],
-    [
-        r"what time (.*) ?",
-        ['This time is: ' + str(datetime.datetime.now()),]
-    ],
-    [
         r"funny story (.*) ?",
         stories.stories
     ],
@@ -131,6 +122,8 @@ chat_pairs = [
         r"(.*) funny story ?",
         stories.stories
     ],
+    
+    
     # [
     #     r"(.*) (+|-|*|/) (.*) ?",
     #     ['%1 %2 ' ,]
@@ -141,3 +134,4 @@ chat_pairs = [
     #     ['nghĩa của từ  '+ '%1'+' là quả xoài',]
     # ],
     ]
+

@@ -10,16 +10,16 @@ transform = transforms.Compose(
 classes = ('plane', 'car', 'bird', 'cat',
            'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 dataReturn = [
-    ['plane', 'máy bay', 'Type', 'A flying vehicle with wings and one or more engines', '/pleɪn/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plane/plane__gb_3.mp3'],
-    ['car', 'xe hơi', 'Type', 'Where can I park the car?', '/kɑːr/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/car__/car__gb_1.mp3'],
-    ['bird', 'con chim', 'Type', 'Birds were singing in the trees.', '/bɜːrd/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bir/bird_/bird__gb_2.mp3'],
-    ['cat', 'con mèo', 'Type', 'I have a cat called Bo.', '/kæt/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/c/cat/cat__/cat__us_1.mp3'],
-    ['deer', 'con hưu', 'Type', 'An animal with long legs that eats grass, leaves, etc. and can run fast', '/dir/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dee/deer_/deer__gb_2.mp3'],
-    ['dog', 'con chó', 'Type', 'I took the dog for a walk.', '/dɔːɡ/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/d/dog/dog__/dog__us_1_rr.mp3'],
-    ['frog', 'con ếch', 'Type', 'The frog jumped into the pond.', '/frɑːɡ/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/f/fro/frog_/frog__us_2_rr.mp3'],
-    ['horse', 'con ngựa', 'Type', 'He mounted his horse and rode off.', '/hɔːrs/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/h/hor/horse/horse__us_1.mp3'],
-    ['ship', 'con tàu', 'Type', 'A large boat that carries people or goods by sea', '/ʃɪp/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/s/shi/ship_/ship__us_1.mp3'],
-    ['truck', 'xe tải', 'Type', 'A large vehicle for carrying heavy loads by road', '/trʌk/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/t/tru/truck/truck__us_1.mp3']
+    ['plane', 'máy bay', 'Noun', 'A flying vehicle with wings and one or more engines', '/pleɪn/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plane/plane__gb_3.mp3'],
+    ['car', 'xe hơi', 'Noun', 'Where can I park the car?', '/kɑːr/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/car__/car__gb_1.mp3'],
+    ['bird', 'con chim', 'Noun', 'Birds were singing in the trees.', '/bɜːrd/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bir/bird_/bird__gb_2.mp3'],
+    ['cat', 'con mèo', 'Noun', 'I have a cat called Bo.', '/kæt/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/c/cat/cat__/cat__us_1.mp3'],
+    ['deer', 'con hưu', 'Noun', 'An animal with long legs that eats grass, leaves, etc. and can run fast', '/dir/', 'https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dee/deer_/deer__gb_2.mp3'],
+    ['dog', 'con chó', 'Noun', 'I took the dog for a walk.', '/dɔːɡ/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/d/dog/dog__/dog__us_1_rr.mp3'],
+    ['frog', 'con ếch', 'Noun', 'The frog jumped into the pond.', '/frɑːɡ/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/f/fro/frog_/frog__us_2_rr.mp3'],
+    ['horse', 'con ngựa', 'Noun', 'He mounted his horse and rode off.', '/hɔːrs/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/h/hor/horse/horse__us_1.mp3'],
+    ['ship', 'con tàu', 'Noun', 'A large boat that carries people or goods by sea', '/ʃɪp/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/s/shi/ship_/ship__us_1.mp3'],
+    ['truck', 'xe tải', 'Noun', 'A large vehicle for carrying heavy loads by road', '/trʌk/', 'https://www.oxfordlearnersdictionaries.com/media/english/us_pron/t/tru/truck/truck__us_1.mp3']
 ]
 
 import torch.nn as nn

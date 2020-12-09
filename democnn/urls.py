@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from api.views import  chatbot_response, classification_api
+from api.views import  chatbot_response, classification_api, getALl, get_flashcard_api, get_image_url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('image', classification_api),
-    path('chatbot', chatbot_response)
+    path('chatbot', chatbot_response),
+    path('getdata', getALl),
+    path('getflashcard', get_flashcard_api),
+    path('getimageurl', get_image_url),
 ]
